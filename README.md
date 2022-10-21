@@ -25,3 +25,4 @@ New Repository for Challenge 1 work
 
 - What are some other possible tables and/or graphs that we could create?
 
+![Outcomes vs Launch Date](./Theater_Outcomes_vs_Launch.png)
