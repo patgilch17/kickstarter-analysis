@@ -1,7 +1,7 @@
 # Challenge 1: Analyzing Similar Kickstarter Campaigns
 
 ## Overview
-After finding funding via a kickstarter campaign for their new play _Fever_, our client became curious about the results of fundraising campaigns for similar projects compared to when they were launched and what their amount goal was.  Fortunately, Kickstarter keeps records for all campaign results and takes the time to organize by project type and sub-type.  Using this data we were asked to determine the success of similar campaigns and provide our analysis and conclusions.
+After finding funding via a kickstarter campaign for their new play _Fever_, our client became curious about the results of fundraising campaigns for similar projects compared to when they were launched and what their goal (amount$) was.  Fortunately, Kickstarter keeps records for all campaign results and takes the time to organize by project type and sub-type.  Using this data we were asked to determine the success of similar campaigns and provide our analysis and conclusions.
 
 ## Analysis and Challenges
 
@@ -9,7 +9,7 @@ After finding funding via a kickstarter campaign for their new play _Fever_, our
 
 To look at how similar campaigns faired over the course of time we decided to investigate the results of similar campaigns by month.  The graph below is the result of this analysis comparing the total number of different results (Successful, Failed, Canceled) within each month for the period of data collected from the category of Theater.
 ![Outcomes vs Launch Date](./Theater_Outcomes_vs_Launch.png)
-Both the Failed and Successful lines seem to have similar shapes and likewise seem to share many of the same peaks and valleys in their data.  The total number of Canceled shows on the other hand doesn't show nearly as much of a dramatic change, with the exception of their being no canceled shows during the month of October.  The month with the highest number of successful (and failed) appears to be the month of May with that peak extending from about April to August.  Additionally, there are more subtle peaks for the successful and failed categories in the months of February and October.
+Both the Failed and Successful lines seem to have similar shapes and likewise seem to share many of the same highs and lows in their data.  The total number of Canceled shows on the other hand doesn't show nearly as much of a dramatic change, with the exception of their being no canceled shows during the month of October.  The month with the highest number of successful (and failed) appears to be the month of May with that peak extending from about April to August.  Additionally, there are more subtle peaks for the successful and failed categories in the months of February and October.
 
 
 
@@ -28,10 +28,5 @@ The most significant challenges encountered while analyzing this data were both 
 The fact that the graphs of success and fails vs launch date seem to follow a similar pattern is not that out place.  Since a spike in both essentially indicates that there are more campigns that occur in that month.  But based on our analysis of the data I believe we can say with some confidence that if in the future someone was planning on funding a Theater project using a kickstarter they should definitely consider having the project set to launch sometime from April to August, and even more ideally would be May to July due to the significant spike in the number of Successful campaigns.  Likewise it is recommended that Novemer and in particular December be avoided due to the sharp decline of Successful campaigns.  There may be additional analysis that would be worth looking at for the months of February and October.  These months jump out for opposite reasons where in February there is noticeable spike in Successful campaigns and a less significant spike in Failed campaigns with the opposite occuring in October.  This would indicate that while neither month has the most campaigns attempted, February may see a higher percentage of success than other months and October seeing more failure.  I would recommend as an additional step to look at and graph months vs percentage instead of just sum total.
 
 Regarding our analysis vs Goals, it would appear that smaller fundraisers (less than $15000) and then fundraisers in the range of $35000 to $45000 would be the most ideal goals to aim for.  Outside of these ranges the likelihood of a campaign failing is definitely higher.
-- What are two conclusions you can draw about the Outcomes based on Launch Date?
 
-- What can you conclude about the Outcomes based on Goals?
-
-- What are some limitations of this dataset?
-
-- What are some other possible tables and/or graphs that we could create?
+Some limitations of the dataset would include things like a more defined location of the project/campaign and another one might be an additional easily filterable column for genre.  Just to clarify, a play debuting in Pella, Iowa may have a different level of success compared to a similar play debuting on Broadway.  Likewise, different genres may find different success, meaning an opera may have wildly different results from a play meant for children not to mention a different budget/goal.
